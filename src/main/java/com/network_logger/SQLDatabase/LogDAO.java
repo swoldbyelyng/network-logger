@@ -11,7 +11,9 @@ public class LogDAO implements ILogDAO {
 
 
     @Override
-    public void createLog(String input, String inputTime, String output, String outputTime, String date, String request, String httpRequesteType, boolean isError) throws SQLException {
+    public void createLog(String input, String inputTime, String output,
+                          String outputTime, String date, String request,
+                          String httpRequesteType, boolean isError) throws SQLException {
 
         Connection connection = connector.connectToRemoteDB();
 
